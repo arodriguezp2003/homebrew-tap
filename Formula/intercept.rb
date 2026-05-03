@@ -7,14 +7,14 @@ class Intercept < Formula
   on_macos do
     if Hardware::CPU.arm?
       url "https://github.com/arodriguezp2003/intercepthq/releases/download/v1.0.0/intercept-1.0.0-darwin-arm64.tar.gz"
-      sha256 "056a5166fe03c9d2c00f37f31bde6b4bf5fac7986c48609e13e6233594a6bbac"
+      sha256 "8f3d3aa9bf5daad52b1c983bdd04117271423601afe955dbfb4ff67048772172"
 
       def install
         bin.install "intercept-darwin-arm64" => "intercept"
       end
     else
       url "https://github.com/arodriguezp2003/intercepthq/releases/download/v1.0.0/intercept-1.0.0-darwin-amd64.tar.gz"
-      sha256 "07ed9cc66abceeec44b33776271eb80bd1635f5ba97df83f932e003a8bedceda"
+      sha256 "8872fa48514ac5be6f33cc613f03e023cd5046a669e09f12a40ef000a24d89d0"
 
       def install
         bin.install "intercept-darwin-amd64" => "intercept"
@@ -25,14 +25,14 @@ class Intercept < Formula
   on_linux do
     if Hardware::CPU.arm?
       url "https://github.com/arodriguezp2003/intercepthq/releases/download/v1.0.0/intercept-1.0.0-linux-arm64.tar.gz"
-      sha256 "b4d44162960f0ad7100519be32f43525c6808956ebb34dde5caa999a3d863a19"
+      sha256 "a9318fa4cdb665a52dd6942667183e7aef40a4a9aea4d17d4c05d5ae30915034"
 
       def install
         bin.install "intercept-linux-arm64" => "intercept"
       end
     else
       url "https://github.com/arodriguezp2003/intercepthq/releases/download/v1.0.0/intercept-1.0.0-linux-amd64.tar.gz"
-      sha256 "0fbfa38a3905b802e36fdf7917a5a9d9f8ab03a62a66bf3bbf64072a2ab6b29d"
+      sha256 "d215a49a435791eeb26450f242d7974fcbe2468a31bbe3589849069b59b8aeef"
 
       def install
         bin.install "intercept-linux-amd64" => "intercept"
