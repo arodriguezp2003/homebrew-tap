@@ -1,20 +1,20 @@
 class Intercept < Formula
   desc "HTTP reverse proxy with real-time traffic inspection and response mocking"
   homepage "https://intercepthq.com"
-  version "1.0.0"
+  version "1.0.1"
   license :cannot_represent
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/arodriguezp2003/intercepthq/releases/download/v1.0.0/intercept-1.0.0-darwin-arm64.tar.gz"
-      sha256 "ebe153551c26c8b6fb468fe81f71dfabd41e8f8ff76537fabfbd25e409bf9828"
+      url "https://github.com/arodriguezp2003/intercepthq/releases/download/v1.0.1/intercept-1.0.1-darwin-arm64.tar.gz"
+      sha256 "6c0d0f50c5c461f81cb59364b21b625305fe466783fb5f10a5d09b6409cbddc2"
 
       def install
         bin.install "intercept-darwin-arm64" => "intercept"
       end
     else
-      url "https://github.com/arodriguezp2003/intercepthq/releases/download/v1.0.0/intercept-1.0.0-darwin-amd64.tar.gz"
-      sha256 "9ec8f9b1e6dfe607efb7fc48f8985ae3ec7a46b791199934d8c49f519ffdc5ab"
+      url "https://github.com/arodriguezp2003/intercepthq/releases/download/v1.0.1/intercept-1.0.1-darwin-amd64.tar.gz"
+      sha256 "bf6a9af60de936253087773e01bb7b1af9e19d53eaaea10dcdca3bcd35e407bc"
 
       def install
         bin.install "intercept-darwin-amd64" => "intercept"
@@ -24,15 +24,15 @@ class Intercept < Formula
 
   on_linux do
     if Hardware::CPU.arm?
-      url "https://github.com/arodriguezp2003/intercepthq/releases/download/v1.0.0/intercept-1.0.0-linux-arm64.tar.gz"
-      sha256 "697e8f76b4afa6959f5f6a7e4e54e34d44e09d214bf4572bdc2a220bf4412b79"
+      url "https://github.com/arodriguezp2003/intercepthq/releases/download/v1.0.1/intercept-1.0.1-linux-arm64.tar.gz"
+      sha256 "abda05b308509c401430a211d2909103fbac3077ace47658f9a0ff1d144327d5"
 
       def install
         bin.install "intercept-linux-arm64" => "intercept"
       end
     else
-      url "https://github.com/arodriguezp2003/intercepthq/releases/download/v1.0.0/intercept-1.0.0-linux-amd64.tar.gz"
-      sha256 "33035b91f9fba0faa0a6e2064211a128f7b8b4782a19c81d7657dda4711a4a80"
+      url "https://github.com/arodriguezp2003/intercepthq/releases/download/v1.0.1/intercept-1.0.1-linux-amd64.tar.gz"
+      sha256 "fb3cc06fe944820c09dd875e6d1a5a8c709790dda24b5ded83557abe7732d2b4"
 
       def install
         bin.install "intercept-linux-amd64" => "intercept"
